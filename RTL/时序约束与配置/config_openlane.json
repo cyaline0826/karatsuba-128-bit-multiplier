@@ -1,0 +1,23 @@
+{
+  "DESIGN_NAME": "karatsuba128",
+
+  "VERILOG_FILES": [
+    "dir::src/karatsuba128.v",
+    "dir::src/mult_base.v",
+    "dir::src/addsub.v"
+  ],
+
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 52,
+
+  "DESIGN_IS_CORE": true,
+  "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
+
+  "PNR_SDC_FILE": "dir::src/pnr.sdc",
+  "SIGNOFF_SDC_FILE": "dir::src/signoff.sdc",
+
+  "FP_CORE_UTIL": 35,
+
+  "RUN_HEURISTIC_DIODE_INSERTION": true,
+  "RUN_ANTENNA_REPAIR": true
+}
